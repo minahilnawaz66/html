@@ -1,0 +1,13 @@
+open GIT bash
+
+mkdir test
+git init
+git status
+(create a text file in users test folder)
+git add demo.txt
+git commit -m "committing a text file"
+git config --global user.username minahilnawaz66
+
+(now create repository on github)
+git remote add origin [url]
+git push origin master

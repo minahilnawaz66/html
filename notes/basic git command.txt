@@ -1,0 +1,19 @@
+Basic Git Command:
+    - git init
+    - git status
+    - git commit -m "[commit msg]"
+    - git add <fileName>
+    - git add .
+    - git log
+    - git log --oneline
+    - git restore <fileName>
+    - git resote .
+    - git checkout <branchName>
+    - git checkout <commitHashKey short|long>
+
+
+(when you perform changes in file you did git add . and then you did git commit .)
+
+
+
+
