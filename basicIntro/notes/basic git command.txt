@@ -19,7 +19,7 @@ Git Remote Commands
     -git remote rm origin
     -git push -u origin <branchName  master| main | any>
     -git push
-    -git pull
+    -git pull/fetch
 
 
 
