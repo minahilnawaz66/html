@@ -19,14 +19,14 @@
             <tr>
                 <td><b>FIRST NAME</b></td>
                 <td>
-                    <input type="text" name="First_Name" maxlength="10"/>
+                    <input type="text" name="First_Name" placeholder="FirstName" maxlength="10"/>
                     (max length 10)
                 </td>
                 </tr>
                 
                 <td><b>LAST NAME</b></td>
                 <td>
-                    <input type="text" name="Last_Name" maxlength="10"/>
+                    <input type="text" name="Last_Name" placeholder="LastName" maxlength="10"/>
                     (max length 10)
                 </td>
                 </tr>
@@ -118,13 +118,13 @@
                 </tr>
                     <tr>
                         <td><b>EMAIL ID</b></td>
-                        <td><input type="text" name="Email_Id" maxlength="30" /></td>
+                        <td><input type="text" name="Email_Id" placeholder="abc@gmail.com" maxlength="30" /></td>
                         </tr>
 
                         <tr>
                         <td><b>MOBILE NUMBER</b></td>
                         <td>
-                        <input type="text" name="Mobile_Number" maxlength="10" />
+                        <input type="text" name="Mobile_Number" placeholder="3001234567" maxlength="10" />
                         (10 digit number)
                         </td>
                         </tr>
@@ -163,9 +163,9 @@
                             <td><select id="State" name="State">
     
                                 <option value="-1">State:</option>
-                                <option value="Punjab">Lahore</option>
-                                <option value="Sindh">Karachi</option>
-                                <option value="Balochistan">Islamabad</option>
+                                <option value="Punjab">Punjab</option>
+                                <option value="Sindh">Sindh</option>
+                                <option value="Balochistan">Balochistan</option>
                                 <option value="KPK">KPK</option>
                                 </select>
                             </td>
@@ -200,13 +200,20 @@
                 <td align="left"><b>Sl.No.</b></td>
                 <td align="left"><b>Examination</b></td>
                 <td align="center"><b>Institute</b></td>
-                <td align="center"><b>Percentage/CGPA</b></td>
+                <td align="center"><b>Percentage/Grade/CGPA</b></td>
                 <td align="center"><b>Year of Passing</b></td>
                 </tr>
                  
                 <tr>
                 <td>1:</td>
-                <td>Class X</td>
+                <td><select name="Matric" id="Matric">
+
+                    <option value="-1">Matric:</option>
+                    <option value="O">O levels</option>
+                    <option value="Science">Matric(Science)</option>
+                    <option value="Arts">Matric(Arts)</option>
+                </select>
+                </td>
                 <td><input type="text" name="ClassX_Board" maxlength="30" /></td>
                 <td><input type="text" name="ClassX_Percentage" maxlength="30" /></td>
                 <td><input type="text" name="ClassX_YrOfPassing" maxlength="30" /></td>
@@ -214,7 +221,16 @@
                  
                 <tr>
                 <td>2:</td>
-                <td>Class XII</td>
+                <td><select name="Inter" id="Inter">
+
+                    <option value="-1">Inter:</option>
+                    <option value="FSc">FSc</option>
+                    <option value="ics">ICS</option>
+                    <option value="icom">ICom</option>
+                    <option value="FA">FA</option>
+                    <option value="A">A levels</option>
+                </select>
+                </td>
                 <td><input type="text" name="ClassXII_Board" maxlength="30" /></td>
                 <td><input type="text" name="ClassXII_Percentage" maxlength="30" /></td>
                 <td><input type="text" name="ClassXII_YrOfPassing" maxlength="30" /></td>
@@ -222,7 +238,15 @@
                
                 <tr>
                 <td>3:</td>
-                <td>Graduation(for masters)</td>
+                <td><select name="Graduation" id="Graduation">
+
+                    <option value="-1">Graduation:</option>
+                    <option value="BS">BS</option>
+                    <option value="BSc">BSc</option>
+                    <option value="bcom">BCom</option>
+                    <option value="BA">BA</option>
+                </select>
+                </td>
                 <td><input type="text" name="Institute_Name" maxlength="30" /></td>
                 <td><input type="text" name="CGPA" maxlength="30" /></td>
                 <td><input type="text" name="Graduation_YrOfPassing" maxlength="30" /></td>
@@ -230,7 +254,12 @@
 
                 <tr>
                 <td>4:</td>
-                <td>Masters(for PhD)</td>
+                <td><select name="MS" id="Masters">
+
+                    <option value="-1">Masters:</option>
+                    <option value="MS">MS</option>
+                </select>
+                </td>
                 <td><input type="text" name="Institute_Name" maxlength="30" /></td>
                 <td><input type="text" name="CGPA" maxlength="30" /></td>
                 <td><input type="text" name="Masters_YrOfPassing" maxlength="30" /></td>
@@ -256,7 +285,7 @@
                         <b>MS</b>(Masters) <input type="radio" name="Course" value="MS" />
                     <br/>
                         <b>PhD</b> <input type="radio" name="Course" value="PhD" />
-                     </td>
+                    </td>
                 </td>
                 </tr>
                  
