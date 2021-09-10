@@ -1,4 +1,4 @@
-<!doctype html />
+<!DOCTYPE html>
 
     <head>
         <meta charset="UTF-8">
@@ -11,10 +11,10 @@
 
     <!--STUDENT PERSONAL INFO-->
     <form action = "form.html" method = "GET">
-        <center><h1><b><u>REGISTRATION FORM</u></b></h1></form></center>
+        <center><h1><u>REGISTRATION FORM</u></h1></center>
         <fieldset>
+            <h2><u>STUDENT INFORMATION:</u></h2>
             <table align="left" cellpadding = "8">
-            <h2><legend><u>STUDENT INFORMATION:</u></legend></h2>
             
             <tr>
                 <td><b>FIRST NAME</b></td>
@@ -22,17 +22,18 @@
                     <input type="text" name="First_Name" placeholder="FirstName" maxlength="10"/>
                     (max length 10)
                 </td>
-                </tr>
+            </tr>
                 
+            <tr>
                 <td><b>LAST NAME</b></td>
                 <td>
                     <input type="text" name="Last_Name" placeholder="LastName" maxlength="10"/>
                     (max length 10)
                 </td>
-                </tr>
+            </tr>
                 
-                <tr>
-                <td><b>DATE OF BIRTH  </td></b>
+            <tr>
+                <td><b>DATE OF BIRTH </b></td>
                 <td>
                     <select name="Birthday_day" id="Birthday_Day">
 
@@ -116,20 +117,20 @@
                     </select>
                 </td>
                 </tr>
-                    <tr>
-                        <td><b>EMAIL ID</b></td>
-                        <td><input type="text" name="Email_Id" placeholder="abc@gmail.com" maxlength="30" /></td>
-                        </tr>
+                <tr>
+                    <td><b>EMAIL ID</b></td>
+                    <td><input type="text" name="Email_Id" placeholder="abc@gmail.com" maxlength="30" /></td>
+                </tr>
 
-                        <tr>
-                        <td><b>MOBILE NUMBER</b></td>
-                        <td>
-                        <input type="text" name="Mobile_Number" placeholder="3001234567" maxlength="10" />
-                        (10 digit number)
-                        </td>
-                        </tr>
+                <tr>
+                    <td><b>MOBILE NUMBER</b></td>
+                    <td>
+                    <input type="text" name="Mobile_Number" placeholder="3001234567" maxlength="10" />
+                    (10 digit number)
+                    </td>
+                </tr>
 
-                        <tr>
+                <tr>
                         <td><b>GENDER</b></td>
                         <td>
                            Male <input type="radio" name="Gender" value="Male" />
@@ -169,7 +170,6 @@
                                 <option value="KPK">KPK</option>
                                 </select>
                             </td>
-                            </td>
                         </tr>
                         <tr>
                             <td><b>COUNTRY</b></td>
@@ -182,8 +182,8 @@
                         </tr>
 
                         <tr>
-                        <td><b>ADDRESS: <br /><br /></td>
-                        <td><textarea name="Address" rows="4" cols="30"></textarea></b></td>
+                        <td><b>ADDRESS: </b></td>
+                        <td><textarea name="Address" rows="4" cols="30"></textarea></td>
                         </tr>
                        
 
@@ -193,7 +193,7 @@
         <br/><br/>
         <!--STUDENT QUALIFICATION-->
         <fieldset>
-            <h2><legend><u>QUALIFICATION:</u></legend></h2>
+            <h2><u>QUALIFICATION:</u></h2>
             <table>
  
                 <tr>
@@ -271,33 +271,31 @@
         <br/><br/>
         <!--STUDENT COURSES-->
         <fieldset>
-            <h2><legend><u>COURSES (applied for):</u></legend></h2>
+            <h2><u>COURSES (applied for):</u></h2>
             <table>
                 <tr>
-                <td>
-                    <td>
-                        <b>BSSE</b>(BS Software Engineering) <input type="radio" name="Course" value="SE" />
-                    <br/>
-                        <b>BSCS</b>(BS Computer Science) <input type="radio" name="Course" value="CS" />
-                    <br/>
-                        <b>BSIT</b>(BS Information Technology) <input type="radio" name="Course" value="IT" />
-                    <br/>
-                        <b>MS</b>(Masters) <input type="radio" name="Course" value="MS" />
-                    <br/>
-                        <b>PhD</b> <input type="radio" name="Course" value="PhD" />
-                    </td>
-                </td>
-                </tr>
-                 
+                
+                    <td><b>BSSE</b>(BS Software Engineering) <input type="radio" name="Course" value="SE" /></td>
+                    <td><br/>
+                    <b>BSCS</b>(BS Computer Science) <input type="radio" name="Course" value="CS" /></td>
+                    <td><br/>
+                    <b>BSIT</b>(BS Information Technology) <input type="radio" name="Course" value="IT" /></td>
+                    <td><br/>
+                    <b>MS</b>(Masters) <input type="radio" name="Course" value="MS" /></td>
+                    <td><br/>
+                    <b>PhD</b> <input type="radio" name="Course" value="PhD" /></td>
+                </tr> 
             </table>            
         </fieldset>
         <br/><br/>
-        <!----- Submit and Reset-->
+        <!-- Submit and Reset-->
+        <table>
             <tr>
                 <td align="center">
                     <input type="submit" value="Submit">
                     <input type="reset" value="Reset">
                 </td>
             </tr>
+        </table>
     </form>
 </html>
